@@ -9,11 +9,20 @@
 // const pi = 3.14 //Const não pode mudar o valor depois que for declarada
 //console.log(pi)
 
-console.log("Olá")
-setTimeout()
-console.log("Iniciando...")
+setTimeout(() => {
+    console.log("Olá")
+}, 2000)
 
-console.log("Executando")
+setTimeout(() => {
+    console.log("Iniciando...")
+}, 4000)
 
-console.log("Terminando...")
+setTimeout(() => {
+    console.log("Executando...")
+}, 6000)
+
+setTimeout(() => {
+    console.log("Terminando.")
+}, 8000)
+
 
