@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+}
+
+
+
+.button-box{
+    display: flex;
+    gap: 10px;
+}
+
+#btn-amarelo{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: lightgray;
+    transition: 0.5s;
+}
+
+#btn-amarelo:hover{
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  
+}
+
+#btn-cinza{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: yellow;
+    transition: 0.5s;
+}
+
+#btn-cinza:hover{
+    background-color: lightgray;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  
+}
+
+
