@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* .nav-header{
+    background-color: #616161;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.hidden{
+    display: none;
+} */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #22CD5B;
+    position: relative;
+}
+
+.logo img{
+    width: 200%;
+    opacity: 1;
+}
+
+.logo{
+    width: 60px;
+} 
+
+.nav-header ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-header ul li a{
+    text-decoration: none;
+    color: #9C7157;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-header{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login{
+    width: 60px;
+    height: 40px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-login a{
+    text-decoration: none;
+    color: #9C7157;
+}
+
+.btn-SignUp{
+    width: 80px;
+    height: 40px;
+    background-color: #9C7157;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.btn-SignUp a{
+    text-decoration: none;
+    color: #22CD5B;
+}
+
+.menu-mobile, .menu-toggle{
+    display: none;
+}
+
+/* Menu mobile */
+@media (max-width: 500px) {
+
+    .nav-header, .btn-header{
+        display: none;
+    }
+    
+.menu-toggle{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.menu-toggle span{
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #9C7157;
+}
+
+.menu-mobile{
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    right:  0;
+    width: 75%;
+    height: 100vh;
+}
+
+.menu-mobile.show{
+    opacity: 1;
+}
+
+}
