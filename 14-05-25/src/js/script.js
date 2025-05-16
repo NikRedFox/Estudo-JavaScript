@@ -23,9 +23,19 @@
 // })
 
 // ----------------------------------------------------------
-let botao = document.getElementById("menu-btn")
-let menu = document.getElementById("menu")
+// let botao = document.getElementById("menu-btn")
+// let menu = document.getElementById("menu")
+
+// botao.addEventListener("click", function(){
+//     menu.classList.toggle("hidden")
+// })
+
+// ----------------------------------------------------------
+let botao = document.getElementById("menu-toggle")
+let menuMobile = document.getElementById("menu-mobile")
 
 botao.addEventListener("click", function(){
-    menu.classList.toggle("hidden")
+    menuMobile.classList.toggle("show")
+    document.body.classList.toggle("no-scroll")
+    botao.classList.toggle("active")
 })

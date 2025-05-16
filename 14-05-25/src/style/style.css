@@ -15,6 +15,14 @@
     display: none;
 } */
 
+body{
+    cursor: url(../assets/cursor\ \(1\).cur), auto;
+}
+
+a{
+    cursor: url(../assets/cursor\ \(1\).cur), auto;
+}
+
 header{
     display: flex;
     justify-content: space-around;
@@ -88,37 +96,76 @@ header{
         display: none;
     }
     
-.menu-toggle{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    cursor: pointer;
-}
+    .menu-toggle{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+    }
 
-.menu-toggle span{
-    width: 30px;
-    height: 3px;
-    border-radius: 10px;
-    background-color: #9C7157;
-}
+    .menu-toggle span{
+        width: 30px;
+        height: 3px;
+        border-radius: 10px;
+        background-color: #9C7157;
+        transition: 0.5s;
+    }
 
-.menu-mobile{
-    background-color: lightgreen;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
-    position: absolute;
-    top: 100%;
-    right:  0;
-    width: 75%;
-    height: 100vh;
-}
+    .menu-toggle.active span:nth-child(1){
+        background-color: red;
+        transform: rotate(45deg) translate(5px, 5px);
+        transition: 0.5s;
+    }
+    .menu-toggle.active span:nth-child(2){
+        background-color: red;
+        opacity: 0;
+        transition: 0.2s;
+    }
+    .menu-toggle.active span:nth-child(3){
+        background-color: red;
+        transform: rotate(-45deg) translate(5px, -5px);
+        transition: 0.5s;
+    }
 
-.menu-mobile.show{
-    opacity: 1;
-}
+    .menu-mobile{
+        background-color: lightgreen;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        position: absolute;
+        top: 100%;
+        right:  0;
+        width: 75%;
+        height: 100vh;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease;        
+    }
 
+    .no-scroll{
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .menu-mobile.show{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-header-mobile a{
+        text-decoration: none;
+        color: #9C7157;    
+        font-size: 40px;    
+    }
+
+    .nav-header-mobile ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 80px;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
 }
