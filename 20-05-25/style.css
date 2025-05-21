@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: url(https://images.stockcake.com/public/4/2/1/421dc758-ee86-4b60-8180-cc49112cadf9_large/synthwave-sunset-drive-stockcake.jpg); */
+    /* background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2lma2M2N2x5ZHo0bmI1NHQycHMzNmtkOWZidjF6cnZiMGNhZG55YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9zExs2Q2h1EHfE4P6G/giphy.gif); */
+    background-image: url(https://i.pinimg.com/originals/aa/df/9d/aadf9d097b89e17176ad1e5151fe655f.gif);
+    background-repeat: no-repeat;
+    background-size: cover;      
+    /* background: linear-gradient(180deg, #3745ff, #b810c7, #f73dde, #e7e427); */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 8px;
+    color: #11998e;
+    font-weight: bold;
+}
+
+button{
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #1199e8;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: purple;
+}
+
+p{
+    color: black;
+    font-size: 20px;
+    font-weight: bold
+}
+
+.resultado{
+    margin-top: 20px;
+    text-align: left;
+}
