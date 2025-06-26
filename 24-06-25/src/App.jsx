@@ -1,6 +1,5 @@
 import Component from "./components/container"
 
-
 function App() {
 
   return (
